@@ -34,6 +34,12 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', (req, res) => {
+  // no middleware
+  // no custom error handling
+  // no validation
+  // coupled to knex
+  // coupled to the database structure!!!!
+  // does promises weird????
   const fruitData = req.body;
   db('fruits').insert(fruitData)
   .then(ids => {
