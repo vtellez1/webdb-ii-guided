@@ -4,5 +4,6 @@
 // "db('fruits').insert()..."
 const knex = require('knex')
 const configuration = require('../knexfile').development
+const db = knex(configuration)
 
-module.exports = knex(configuration)
+module.exports = db
