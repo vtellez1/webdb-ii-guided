@@ -6,8 +6,8 @@ exports.seed = function (knex) {
       // Inserts seed entries
       return knex('fruits').insert([
         { name: 'pear', avgWeightOz: 1.2 },
-        { name: 'pear', avgWeightOz: 1.2, delicious: 1 },
-        { name: 'pear', avgWeightOz: 1.2, delicious: false }
+        { name: 'apple', avgWeightOz: 1.2, delicious: 1 },
+        { name: 'mango', avgWeightOz: 1.2, delicious: false }
       ]);
     });
 };
